@@ -48,14 +48,9 @@ nav>span>ul>li:hover>ul {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 1100px;
-    margin-left: 120px;
-    margin-right: 150px;
+    height: 60vh;
+    margin: 0 auto;
     margin-top: 30px;
-    grid-column-gap: 100px;
-}
-.journey{
-    Width:582px;
-    Height :270px;
 
 }
 .journey-title{
@@ -71,7 +66,7 @@ nav>span>ul>li:hover>ul {
   
 }
 .first-image{
-    Width :400px;
+   width: 400px;
     Height :400px;
     background-image: url(images/Circle\ design.svg);
     background-size: cover;
@@ -91,7 +86,12 @@ a:hover{
    
 }
 /* logos style  */
+.logo-container{
+        width: 1100px;
+        margin:  0 auto;
+}
 .logos{
+
     display: grid;
     grid-template-columns: repeat(7,1fr);
     margin: 100px 150px;
@@ -101,17 +101,14 @@ a:hover{
 
 /* popular collection part  */
 .second-section{
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 30px;
+        width: 1100px;
+        margin: auto;
 }
 .popular-title{
     text-align: center;
     color:#3A3A3A;
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
-
-
 }
 .popular-collection{
     display: grid;
@@ -141,8 +138,6 @@ a:hover{
 .product-image:hover{
     transform: scale(1.2);
     transition: transform 3s ease;
-
-
 }
 h4{
     color:rgba(0, 0, 0, 0.87);
@@ -236,4 +231,111 @@ h2{
    text-align: center;
    padding-top:20px;
    padding-bottom: 30px;
+}
+@media  (max-width:400px) {
+    body{
+        max-width: 400px;
+    }
+    .nav-brand{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .nav-items{
+        display: none;
+    }
+    .first-section{
+        grid-template-columns: repeat(1,0fr);
+        height: fit-content;
+        grid-gap: 20px;
+        width: 400px;
+    }
+    .journey{
+        order: 2;
+    }
+    .first-image{
+        width: 80%;
+    }
+    .logo-container{
+        width: 300px;
+        grid-gap: 10px;
+    }
+    .logos{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        grid-row-gap: 20px;
+    }
+    .second-section{
+        width: 400px;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(1,0fr);
+    }
+    .third-section{
+        width: 400px;
+    }
+    .membership{
+        grid-template-columns: repeat(1,0fr);
+        width: 300px;
+        justify-content: center;
+    }
+    .customer{
+        width:100% ;
+    }
+}
+
+
+
+@media (min-width:401px) and (max-width:800px) {
+    body{
+        max-width: 800px;
+    }
+    .nav-brand{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .nav-items{
+        display: none;
+    }
+    .first-section{
+        grid-template-columns: repeat(1,0fr);
+        height: fit-content;
+        grid-gap: 20px;
+        width: 400px;
+    }
+    .journey{
+        order: 2;
+    }
+    .first-image{
+        width: 80%;
+    }
+    .logo-container{
+        width: 300px;
+        grid-gap: 10px;
+    }
+    .logos{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        grid-row-gap: 20px;
+    }
+    .second-section{
+        width: 700px;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .third-section{
+        width: 700px;
+    }
+    .membership{
+        grid-template-columns: repeat(1,0fr);
+        width: 700px;
+        justify-content: center;
+    }
+    .customer{
+        width:400px ;
+        height: 450px;
+    }
+    .foot{
+        width: 100%;
+    }
 }
