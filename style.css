@@ -191,10 +191,14 @@ p{
     padding:10px 15px 15px 20px;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    background-image: url(images/back.jpg);
+}
+.desc{
+    color: whitesmoke;
 }
 .silver-head,.diamond-head,.gold-head{
     font-size: 30px;
-    color: #3A3A3A;
+    color: white;
     font-family:cursive;
 }
 .price{
